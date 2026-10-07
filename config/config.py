@@ -1,6 +1,6 @@
 import os
 import pymysql
-BASE_URL = "http://127.0.0.1:5005"
+BASE_URL = "https://129rw12mk7738.vicp.fun"
 PATH = "./data/测试用例.xlsx"
 EXCEL_SHEET = "测试用例"
 
