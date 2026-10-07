@@ -10,24 +10,24 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    # 关键：给 workflow 写 gh-pages 的权限
+    permissions:
+      contents: write
+
     steps:
-      # 1. 拉代码
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2. 装 Python
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      # 3. 装 Python 依赖
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      # 4. 装 Allure 命令行工具（关键！）
       - name: Install Allure CLI
         run: |
           curl -o allure.tgz -L https://github.com/allure-framework/allure2/releases/download/2.27.0/allure-2.27.0.tgz
@@ -35,18 +35,14 @@ jobs:
           sudo mv allure-2.27.0 /opt/allure
           echo '/opt/allure/bin' >> $GITHUB_PATH
 
-      # 5. 确认 allure 可用（调试用，可选）
-      - name: Verify Allure
-        run: allure --version
-
-      # 6. 跑你的 run.py
       - name: Run tests
         run: python run.py
 
-      # 7. 上传 HTML 报告，方便下载查看
-      - name: Upload Allure report
-        if: always()          # 无论测试成败都上传
-        uses: actions/upload-artifact@v4
+      # 把报告推到 gh-pages 分支
+      - name: Deploy report to gh-pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          name: allure-report
-          path: report/html_report
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: report/html_report
+          publish_branch: gh-pages
