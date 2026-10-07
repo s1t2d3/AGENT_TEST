@@ -1,7 +1,0 @@
-INFO     testcases.test_runner:test_runner.py:38 开始执行用例：CHAT_003, 聊天
-INFO     utils.case_data:case_data.py:15 开始处理用例数据：CHAT_003
-INFO     utils.case_data:case_data.py:26 用例数据处理完成:{'method': 'POST', 'url': 'https://129rw12mk7738.vicp.fun/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '   ', 'session_id': 'abc12345'}, 'files': ''}
-INFO     utils.send_requests:send_requests.py:18 开始发送请求：{'method': 'POST', 'url': 'https://129rw12mk7738.vicp.fun/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '   ', 'session_id': 'abc12345'}, 'files': ''}
-INFO     utils.send_requests:send_requests.py:25 请求成功：401
-INFO     utils.asserts:asserts.py:21 开始断言:CHAT_003
-ERROR    utils.asserts:asserts.py:49 断言失败:CHAT_003

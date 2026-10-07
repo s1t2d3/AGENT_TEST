@@ -1,7 +1,0 @@
-INFO     testcases.test_runner:test_runner.py:38 开始执行用例：SESSION_007, 会话管理
-INFO     utils.case_data:case_data.py:15 开始处理用例数据：SESSION_007
-INFO     utils.case_data:case_data.py:26 用例数据处理完成:{'method': 'PUT', 'url': 'https://129rw12mk7738.vicp.fun/api/sessions/${session_id}', 'headers': '', 'params': '', 'data': '', 'json': {'messages': [{'role': 'user', 'content': '新消息'}]}, 'files': ''}
-INFO     utils.send_requests:send_requests.py:18 开始发送请求：{'method': 'PUT', 'url': 'https://129rw12mk7738.vicp.fun/api/sessions/${session_id}', 'headers': '', 'params': '', 'data': '', 'json': {'messages': [{'role': 'user', 'content': '新消息'}]}, 'files': ''}
-INFO     utils.send_requests:send_requests.py:25 请求成功：401
-INFO     utils.asserts:asserts.py:21 开始断言:SESSION_007
-ERROR    utils.asserts:asserts.py:49 断言失败:SESSION_007
