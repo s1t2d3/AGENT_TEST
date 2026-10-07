@@ -60,4 +60,7 @@ jobs:
           git commit -m "update report"
           git branch -M master
           git remote add gitee https://${{ secrets.GITEE_USER }}:${{ secrets.GITEE_TOKEN }}@gitee.com/${{ secrets.GITEE_USER }}/${{ secrets.GITEE_REPO }}.git
+          git config http.postBuffer 524288000
+          git config http.lowSpeedLimit 0
+          git config http.lowSpeedTime 999999
           git push -f gitee master
