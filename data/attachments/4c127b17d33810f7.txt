@@ -1,0 +1,9 @@
+INFO     testcases.test_runner:test_runner.py:38 开始执行用例：AUTH_REG_008, 认证-注册
+INFO     utils.case_data:case_data.py:15 开始处理用例数据：AUTH_REG_008
+INFO     utils.case_data:case_data.py:26 用例数据处理完成:{'method': 'POST', 'url': 'https://129rw12mk7738.vicp.fun/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'confirm_password': '654321'}, 'files': ''}
+INFO     utils.send_requests:send_requests.py:18 开始发送请求：{'method': 'POST', 'url': 'https://129rw12mk7738.vicp.fun/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'confirm_password': '654321'}, 'files': ''}
+INFO     utils.send_requests:send_requests.py:25 请求成功：400
+INFO     utils.asserts:asserts.py:21 开始断言:AUTH_REG_008
+INFO     utils.asserts:asserts.py:41 断言成功:预期结果(两次输入的密码不一致) == 实际结果(两次输入的密码不一致)
+INFO     utils.data_extraction:data_extraction.py:10 开始数据提取
+INFO     testcases.test_runner:test_runner.py:55 用例执行完成：AUTH_REG_008, 认证-注册

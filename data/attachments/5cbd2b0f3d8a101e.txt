@@ -1,5 +1,0 @@
-INFO     testcases.test_runner:test_runner.py:38 开始执行用例：CHAT_006, 聊天
-INFO     utils.case_data:case_data.py:15 开始处理用例数据：CHAT_006
-INFO     utils.case_data:case_data.py:26 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '触发异常', 'session_id': 'abc12345'}, 'files': ''}
-INFO     utils.send_requests:send_requests.py:18 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '触发异常', 'session_id': 'abc12345'}, 'files': ''}
-ERROR    utils.send_requests:send_requests.py:28 请求异常：HTTPConnectionPool(host='127.0.0.1', port=5005): Max retries exceeded with url: /api/chat/stream (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=5005): Failed to establish a new connection: [Errno 111] Connection refused"))
