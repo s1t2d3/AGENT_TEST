@@ -1,423 +1,423 @@
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：AUTH_REG_001, 认证-注册
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_REG_001
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:AUTH_REG_001
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(注册成功) == 实际结果(注册成功)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：AUTH_REG_001, 认证-注册
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：AUTH_REG_002, 认证-注册
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_REG_002
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': '', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': '', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：400
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:AUTH_REG_002
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(用户名和密码不能为空) == 实际结果(用户名和密码不能为空)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：AUTH_REG_002, 认证-注册
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：AUTH_REG_003, 认证-注册
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_REG_003
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '', 'confirm_password': ''}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '', 'confirm_password': ''}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：400
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:AUTH_REG_003
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(用户名和密码不能为空) == 实际结果(用户名和密码不能为空)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：AUTH_REG_003, 认证-注册
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：AUTH_REG_004, 认证-注册
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_REG_004
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'a', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'a', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：400
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:AUTH_REG_004
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(用户名至少2位) == 实际结果(用户名至少2位)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：AUTH_REG_004, 认证-注册
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：AUTH_REG_005, 认证-注册
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_REG_005
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'ab', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'ab', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:AUTH_REG_005
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(注册成功) == 实际结果(注册成功)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：AUTH_REG_005, 认证-注册
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：AUTH_REG_006, 认证-注册
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_REG_006
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '12345', 'confirm_password': '12345'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '12345', 'confirm_password': '12345'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：400
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:AUTH_REG_006
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(密码长度至少6位) == 实际结果(密码长度至少6位)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：AUTH_REG_006, 认证-注册
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：AUTH_REG_007, 认证-注册
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_REG_007
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser2', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser2', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:AUTH_REG_007
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(注册成功) == 实际结果(注册成功)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：AUTH_REG_007, 认证-注册
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：AUTH_REG_008, 认证-注册
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_REG_008
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'confirm_password': '654321'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'confirm_password': '654321'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：400
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:AUTH_REG_008
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(两次输入的密码不一致) == 实际结果(两次输入的密码不一致)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：AUTH_REG_008, 认证-注册
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：AUTH_REG_009, 认证-注册
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_REG_009
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：400
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:AUTH_REG_009
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(用户名已存在) == 实际结果(用户名已存在)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：AUTH_REG_009, 认证-注册
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：AUTH_REG_010, 认证-注册
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_REG_010
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': '  spaceuser  ', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': '  spaceuser  ', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:AUTH_REG_010
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(注册成功) == 实际结果(注册成功)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：AUTH_REG_010, 认证-注册
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：AUTH_LOGIN_001, 认证-登录
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_LOGIN_001
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'remember': False}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'remember': False}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:AUTH_LOGIN_001
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(登录成功) == 实际结果(登录成功)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：AUTH_LOGIN_001, 认证-登录
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：AUTH_LOGIN_002, 认证-登录
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_LOGIN_002
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'remember': True}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'remember': True}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:AUTH_LOGIN_002
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(登录成功) == 实际结果(登录成功)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：AUTH_LOGIN_002, 认证-登录
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：AUTH_LOGIN_003, 认证-登录
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_LOGIN_003
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': '', 'password': '123456'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': '', 'password': '123456'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：400
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:AUTH_LOGIN_003
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(用户名和密码不能为空) == 实际结果(用户名和密码不能为空)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：AUTH_LOGIN_003, 认证-登录
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：AUTH_LOGIN_004, 认证-登录
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_LOGIN_004
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': ''}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': ''}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：400
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:AUTH_LOGIN_004
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(用户名和密码不能为空) == 实际结果(用户名和密码不能为空)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：AUTH_LOGIN_004, 认证-登录
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：AUTH_LOGIN_005, 认证-登录
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_LOGIN_005
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'nouser', 'password': '123456'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'nouser', 'password': '123456'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：401
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:AUTH_LOGIN_005
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(用户名或密码错误) == 实际结果(用户名或密码错误)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：AUTH_LOGIN_005, 认证-登录
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：AUTH_LOGIN_006, 认证-登录
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_LOGIN_006
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': 'wrongpwd'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': 'wrongpwd'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：401
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:AUTH_LOGIN_006
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(用户名或密码错误) == 实际结果(用户名或密码错误)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：AUTH_LOGIN_006, 认证-登录
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：AUTH_CHECK_001, 认证-状态
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_CHECK_001
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/auth/check', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/auth/check', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:AUTH_CHECK_001
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(已登录) == 实际结果(已登录)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：AUTH_CHECK_001, 认证-状态
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：SESSION_001, 会话管理
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_001
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:SESSION_001
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(获取会话列表成功) == 实际结果(获取会话列表成功)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：SESSION_001, 会话管理
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：SESSION_003, 会话管理
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_003
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': {'messages': [{'role': 'user', 'content': '你好，请介绍一下Python'}]}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': {'messages': [{'role': 'user', 'content': '你好，请介绍一下Python'}]}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:SESSION_003
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(创建会话成功) == 实际结果(创建会话成功)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：SESSION_003, 会话管理
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：SESSION_004, 会话管理
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_004
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': {'messages': []}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': {'messages': []}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:SESSION_004
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(创建会话成功) == 实际结果(创建会话成功)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：SESSION_004, 会话管理
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：SESSION_005, 会话管理
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_005
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': {'messages': [{'role': 'user', 'content': '这是一条非常非常长的消息用来测试标题截断功能是否正常工作'}]}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': {'messages': [{'role': 'user', 'content': '这是一条非常非常长的消息用来测试标题截断功能是否正常工作'}]}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:SESSION_005
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(创建会话成功) == 实际结果(创建会话成功)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：SESSION_005, 会话管理
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：SESSION_007, 会话管理
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_007
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'PUT', 'url': 'http://127.0.0.1:5005/api/sessions/7df7c413', 'headers': '', 'params': '', 'data': '', 'json': {'messages': [{'role': 'user', 'content': '新消息'}]}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'PUT', 'url': 'http://127.0.0.1:5005/api/sessions/7df7c413', 'headers': '', 'params': '', 'data': '', 'json': {'messages': [{'role': 'user', 'content': '新消息'}]}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:SESSION_007
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(更新会话成功) == 实际结果(更新会话成功)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：SESSION_007, 会话管理
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：SESSION_008, 会话管理
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_008
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'PUT', 'url': 'http://127.0.0.1:5005/api/sessions/7df7c413', 'headers': '', 'params': '', 'data': '', 'json': {'title': '自定义标题'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'PUT', 'url': 'http://127.0.0.1:5005/api/sessions/7df7c413', 'headers': '', 'params': '', 'data': '', 'json': {'title': '自定义标题'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:SESSION_008
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(更新会话成功) == 实际结果(更新会话成功)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：SESSION_008, 会话管理
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：SESSION_009, 会话管理
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_009
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'PUT', 'url': 'http://127.0.0.1:5005/api/sessions/nonexistent', 'headers': '', 'params': '', 'data': '', 'json': {'messages': []}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'PUT', 'url': 'http://127.0.0.1:5005/api/sessions/nonexistent', 'headers': '', 'params': '', 'data': '', 'json': {'messages': []}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：404
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:SESSION_009
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(会话不存在) == 实际结果(会话不存在)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：SESSION_009, 会话管理
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：SESSION_011, 会话管理
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_011
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'DELETE', 'url': 'http://127.0.0.1:5005/api/sessions/7df7c413', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'DELETE', 'url': 'http://127.0.0.1:5005/api/sessions/7df7c413', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:SESSION_011
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(删除会话成功) == 实际结果(删除会话成功)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：SESSION_011, 会话管理
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：SESSION_012, 会话管理
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_012
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'DELETE', 'url': 'http://127.0.0.1:5005/api/sessions/nonexistent', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'DELETE', 'url': 'http://127.0.0.1:5005/api/sessions/nonexistent', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:25 - 请求成功：404
-2026-10-06 18:04:04 - INFO - asserts.py:21 - 开始断言:SESSION_012
-2026-10-06 18:04:04 - INFO - asserts.py:41 - 断言成功:预期结果(会话不存在) == 实际结果(会话不存在)
-2026-10-06 18:04:04 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:04 - INFO - test_runner.py:55 - 用例执行完成：SESSION_012, 会话管理
-2026-10-06 18:04:04 - INFO - test_runner.py:38 - 开始执行用例：CHAT_001, 聊天
-2026-10-06 18:04:04 - INFO - case_data.py:15 - 开始处理用例数据：CHAT_001
-2026-10-06 18:04:04 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '你好', 'session_id': 'abc12345'}, 'files': ''}
-2026-10-06 18:04:04 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '你好', 'session_id': 'abc12345'}, 'files': ''}
-2026-10-06 18:04:06 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:06 - INFO - asserts.py:21 - 开始断言:CHAT_001
-2026-10-06 18:04:06 - INFO - asserts.py:34 - 断言成功:预期结果(回复完成) 包含于 实际结果(回复完成)
-2026-10-06 18:04:06 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:06 - INFO - test_runner.py:55 - 用例执行完成：CHAT_001, 聊天
-2026-10-06 18:04:06 - INFO - test_runner.py:38 - 开始执行用例：CHAT_002, 聊天
-2026-10-06 18:04:06 - INFO - case_data.py:15 - 开始处理用例数据：CHAT_002
-2026-10-06 18:04:06 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '', 'session_id': 'abc12345'}, 'files': ''}
-2026-10-06 18:04:06 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '', 'session_id': 'abc12345'}, 'files': ''}
-2026-10-06 18:04:06 - INFO - send_requests.py:25 - 请求成功：400
-2026-10-06 18:04:06 - INFO - asserts.py:21 - 开始断言:CHAT_002
-2026-10-06 18:04:06 - INFO - asserts.py:41 - 断言成功:预期结果(问题不能为空) == 实际结果(问题不能为空)
-2026-10-06 18:04:06 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:06 - INFO - test_runner.py:55 - 用例执行完成：CHAT_002, 聊天
-2026-10-06 18:04:06 - INFO - test_runner.py:38 - 开始执行用例：CHAT_003, 聊天
-2026-10-06 18:04:06 - INFO - case_data.py:15 - 开始处理用例数据：CHAT_003
-2026-10-06 18:04:06 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '   ', 'session_id': 'abc12345'}, 'files': ''}
-2026-10-06 18:04:06 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '   ', 'session_id': 'abc12345'}, 'files': ''}
-2026-10-06 18:04:06 - INFO - send_requests.py:25 - 请求成功：400
-2026-10-06 18:04:06 - INFO - asserts.py:21 - 开始断言:CHAT_003
-2026-10-06 18:04:06 - INFO - asserts.py:41 - 断言成功:预期结果(问题不能为空) == 实际结果(问题不能为空)
-2026-10-06 18:04:06 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:06 - INFO - test_runner.py:55 - 用例执行完成：CHAT_003, 聊天
-2026-10-06 18:04:06 - INFO - test_runner.py:38 - 开始执行用例：CHAT_005, 聊天
-2026-10-06 18:04:06 - INFO - case_data.py:15 - 开始处理用例数据：CHAT_005
-2026-10-06 18:04:06 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '测试消息', 'session_id': 'abc12345'}, 'files': ''}
-2026-10-06 18:04:06 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '测试消息', 'session_id': 'abc12345'}, 'files': ''}
-2026-10-06 18:04:08 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:08 - INFO - asserts.py:21 - 开始断言:CHAT_005
-2026-10-06 18:04:08 - INFO - asserts.py:34 - 断言成功:预期结果(回复完成) 包含于 实际结果(回复完成)
-2026-10-06 18:04:08 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:08 - INFO - test_runner.py:55 - 用例执行完成：CHAT_005, 聊天
-2026-10-06 18:04:08 - INFO - test_runner.py:38 - 开始执行用例：CHAT_006, 聊天
-2026-10-06 18:04:08 - INFO - case_data.py:15 - 开始处理用例数据：CHAT_006
-2026-10-06 18:04:08 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '触发异常', 'session_id': 'abc12345'}, 'files': ''}
-2026-10-06 18:04:08 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '触发异常', 'session_id': 'abc12345'}, 'files': ''}
-2026-10-06 18:04:08 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:08 - INFO - asserts.py:21 - 开始断言:CHAT_006
-2026-10-06 18:04:08 - INFO - asserts.py:34 - 断言成功:预期结果(发生错误) 包含于 实际结果(发生错误: 测试异常)
-2026-10-06 18:04:08 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:08 - INFO - test_runner.py:55 - 用例执行完成：CHAT_006, 聊天
-2026-10-06 18:04:08 - INFO - test_runner.py:38 - 开始执行用例：COMPAT_002, 兼容性
-2026-10-06 18:04:08 - INFO - case_data.py:15 - 开始处理用例数据：COMPAT_002
-2026-10-06 18:04:08 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '你好', 'session_id': 'nonexistent'}, 'files': ''}
-2026-10-06 18:04:08 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '你好', 'session_id': 'nonexistent'}, 'files': ''}
-2026-10-06 18:04:09 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:09 - INFO - asserts.py:21 - 开始断言:COMPAT_002
-2026-10-06 18:04:09 - INFO - asserts.py:34 - 断言成功:预期结果(回复完成) 包含于 实际结果(回复完成)
-2026-10-06 18:04:09 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:09 - INFO - test_runner.py:55 - 用例执行完成：COMPAT_002, 兼容性
-2026-10-06 18:04:09 - INFO - test_runner.py:38 - 开始执行用例：COMPAT_003, 兼容性
-2026-10-06 18:04:09 - INFO - case_data.py:15 - 开始处理用例数据：COMPAT_003
-2026-10-06 18:04:09 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '你好'}, 'files': ''}
-2026-10-06 18:04:09 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '你好'}, 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:11 - INFO - asserts.py:21 - 开始断言:COMPAT_003
-2026-10-06 18:04:11 - INFO - asserts.py:34 - 断言成功:预期结果(回复完成) 包含于 实际结果(回复完成)
-2026-10-06 18:04:11 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:11 - INFO - test_runner.py:55 - 用例执行完成：COMPAT_003, 兼容性
-2026-10-06 18:04:11 - INFO - test_runner.py:38 - 开始执行用例：SEC_003, 安全
-2026-10-06 18:04:11 - INFO - case_data.py:15 - 开始处理用例数据：SEC_003
-2026-10-06 18:04:11 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:11 - INFO - asserts.py:21 - 开始断言:SEC_003
-2026-10-06 18:04:11 - INFO - asserts.py:41 - 断言成功:预期结果(获取会话列表成功) == 实际结果(获取会话列表成功)
-2026-10-06 18:04:11 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:11 - INFO - test_runner.py:55 - 用例执行完成：SEC_003, 安全
-2026-10-06 18:04:11 - INFO - test_runner.py:38 - 开始执行用例：AUTH_LOGOUT_001, 认证-登出
-2026-10-06 18:04:11 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_LOGOUT_001
-2026-10-06 18:04:11 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/logout', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/logout', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:11 - INFO - asserts.py:21 - 开始断言:AUTH_LOGOUT_001
-2026-10-06 18:04:11 - INFO - asserts.py:41 - 断言成功:预期结果(退出成功) == 实际结果(退出成功)
-2026-10-06 18:04:11 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:11 - INFO - test_runner.py:55 - 用例执行完成：AUTH_LOGOUT_001, 认证-登出
-2026-10-06 18:04:11 - INFO - test_runner.py:38 - 开始执行用例：AUTH_LOGOUT_002, 认证-登出
-2026-10-06 18:04:11 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_LOGOUT_002
-2026-10-06 18:04:11 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/logout', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/logout', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:11 - INFO - asserts.py:21 - 开始断言:AUTH_LOGOUT_002
-2026-10-06 18:04:11 - INFO - asserts.py:41 - 断言成功:预期结果(退出成功) == 实际结果(退出成功)
-2026-10-06 18:04:11 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:11 - INFO - test_runner.py:55 - 用例执行完成：AUTH_LOGOUT_002, 认证-登出
-2026-10-06 18:04:11 - INFO - test_runner.py:38 - 开始执行用例：AUTH_CHECK_002, 认证-状态
-2026-10-06 18:04:11 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_CHECK_002
-2026-10-06 18:04:11 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/auth/check', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/auth/check', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:11 - INFO - asserts.py:21 - 开始断言:AUTH_CHECK_002
-2026-10-06 18:04:11 - INFO - asserts.py:41 - 断言成功:预期结果(未登录) == 实际结果(未登录)
-2026-10-06 18:04:11 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:11 - INFO - test_runner.py:55 - 用例执行完成：AUTH_CHECK_002, 认证-状态
-2026-10-06 18:04:11 - INFO - test_runner.py:38 - 开始执行用例：SESSION_002, 会话管理
-2026-10-06 18:04:11 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_002
-2026-10-06 18:04:11 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:25 - 请求成功：401
-2026-10-06 18:04:11 - INFO - asserts.py:21 - 开始断言:SESSION_002
-2026-10-06 18:04:11 - INFO - asserts.py:41 - 断言成功:预期结果(未登录) == 实际结果(未登录)
-2026-10-06 18:04:11 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:11 - INFO - test_runner.py:55 - 用例执行完成：SESSION_002, 会话管理
-2026-10-06 18:04:11 - INFO - test_runner.py:38 - 开始执行用例：SESSION_006, 会话管理
-2026-10-06 18:04:11 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_006
-2026-10-06 18:04:11 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': {'messages': []}, 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': {'messages': []}, 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:25 - 请求成功：401
-2026-10-06 18:04:11 - INFO - asserts.py:21 - 开始断言:SESSION_006
-2026-10-06 18:04:11 - INFO - asserts.py:41 - 断言成功:预期结果(未登录) == 实际结果(未登录)
-2026-10-06 18:04:11 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:11 - INFO - test_runner.py:55 - 用例执行完成：SESSION_006, 会话管理
-2026-10-06 18:04:11 - INFO - test_runner.py:38 - 开始执行用例：SESSION_010, 会话管理
-2026-10-06 18:04:11 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_010
-2026-10-06 18:04:11 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'PUT', 'url': 'http://127.0.0.1:5005/api/sessions/7df7c413', 'headers': '', 'params': '', 'data': '', 'json': {'messages': []}, 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'PUT', 'url': 'http://127.0.0.1:5005/api/sessions/7df7c413', 'headers': '', 'params': '', 'data': '', 'json': {'messages': []}, 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:25 - 请求成功：401
-2026-10-06 18:04:11 - INFO - asserts.py:21 - 开始断言:SESSION_010
-2026-10-06 18:04:11 - INFO - asserts.py:41 - 断言成功:预期结果(未登录) == 实际结果(未登录)
-2026-10-06 18:04:11 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:11 - INFO - test_runner.py:55 - 用例执行完成：SESSION_010, 会话管理
-2026-10-06 18:04:11 - INFO - test_runner.py:38 - 开始执行用例：SESSION_013, 会话管理
-2026-10-06 18:04:11 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_013
-2026-10-06 18:04:11 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'DELETE', 'url': 'http://127.0.0.1:5005/api/sessions/7df7c413', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'DELETE', 'url': 'http://127.0.0.1:5005/api/sessions/7df7c413', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:25 - 请求成功：401
-2026-10-06 18:04:11 - INFO - asserts.py:21 - 开始断言:SESSION_013
-2026-10-06 18:04:11 - INFO - asserts.py:41 - 断言成功:预期结果(未登录) == 实际结果(未登录)
-2026-10-06 18:04:11 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:11 - INFO - test_runner.py:55 - 用例执行完成：SESSION_013, 会话管理
-2026-10-06 18:04:11 - INFO - test_runner.py:38 - 开始执行用例：CHAT_004, 聊天
-2026-10-06 18:04:11 - INFO - case_data.py:15 - 开始处理用例数据：CHAT_004
-2026-10-06 18:04:11 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '你好', 'session_id': 'abc12345'}, 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '你好', 'session_id': 'abc12345'}, 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:25 - 请求成功：401
-2026-10-06 18:04:11 - INFO - asserts.py:21 - 开始断言:CHAT_004
-2026-10-06 18:04:11 - INFO - asserts.py:41 - 断言成功:预期结果(未登录) == 实际结果(未登录)
-2026-10-06 18:04:11 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:11 - INFO - test_runner.py:55 - 用例执行完成：CHAT_004, 聊天
-2026-10-06 18:04:11 - INFO - test_runner.py:38 - 开始执行用例：PAGE_003, 页面
-2026-10-06 18:04:11 - INFO - case_data.py:15 - 开始处理用例数据：PAGE_003
-2026-10-06 18:04:11 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/notexist', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/notexist', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:25 - 请求成功：404
-2026-10-06 18:04:11 - INFO - asserts.py:21 - 开始断言:PAGE_003
-2026-10-06 18:04:11 - INFO - asserts.py:41 - 断言成功:预期结果(接口不存在) == 实际结果(接口不存在)
-2026-10-06 18:04:11 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:11 - INFO - test_runner.py:55 - 用例执行完成：PAGE_003, 页面
-2026-10-06 18:04:11 - INFO - test_runner.py:38 - 开始执行用例：SEC_001, 安全
-2026-10-06 18:04:11 - INFO - case_data.py:15 - 开始处理用例数据：SEC_001
-2026-10-06 18:04:11 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': "admin' OR '1'='1", 'password': '123456'}, 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': "admin' OR '1'='1", 'password': '123456'}, 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:25 - 请求成功：401
-2026-10-06 18:04:11 - INFO - asserts.py:21 - 开始断言:SEC_001
-2026-10-06 18:04:11 - INFO - asserts.py:41 - 断言成功:预期结果(用户名或密码错误) == 实际结果(用户名或密码错误)
-2026-10-06 18:04:11 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:11 - INFO - test_runner.py:55 - 用例执行完成：SEC_001, 安全
-2026-10-06 18:04:11 - INFO - test_runner.py:38 - 开始执行用例：SEC_002, 安全
-2026-10-06 18:04:11 - INFO - case_data.py:15 - 开始处理用例数据：SEC_002
-2026-10-06 18:04:11 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': '<script>alert(1)</script>', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': '<script>alert(1)</script>', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:11 - INFO - asserts.py:21 - 开始断言:SEC_002
-2026-10-06 18:04:11 - INFO - asserts.py:41 - 断言成功:预期结果(注册成功) == 实际结果(注册成功)
-2026-10-06 18:04:11 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:11 - INFO - test_runner.py:55 - 用例执行完成：SEC_002, 安全
-2026-10-06 18:04:11 - INFO - test_runner.py:38 - 开始执行用例：SEC_004, 安全
-2026-10-06 18:04:11 - INFO - case_data.py:15 - 开始处理用例数据：SEC_004
-2026-10-06 18:04:11 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:25 - 请求成功：200
-2026-10-06 18:04:11 - INFO - asserts.py:21 - 开始断言:SEC_004
-2026-10-06 18:04:11 - INFO - asserts.py:41 - 断言成功:预期结果(注册成功) == 实际结果(注册成功)
-2026-10-06 18:04:11 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:11 - INFO - test_runner.py:55 - 用例执行完成：SEC_004, 安全
-2026-10-06 18:04:11 - INFO - test_runner.py:38 - 开始执行用例：COMPAT_001, 兼容性
-2026-10-06 18:04:11 - INFO - case_data.py:15 - 开始处理用例数据：COMPAT_001
-2026-10-06 18:04:11 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
-2026-10-06 18:04:11 - INFO - send_requests.py:25 - 请求成功：400
-2026-10-06 18:04:11 - INFO - asserts.py:21 - 开始断言:COMPAT_001
-2026-10-06 18:04:11 - INFO - asserts.py:41 - 断言成功:预期结果(用户名和密码不能为空) == 实际结果(用户名和密码不能为空)
-2026-10-06 18:04:11 - INFO - data_extraction.py:10 - 开始数据提取
-2026-10-06 18:04:11 - INFO - test_runner.py:55 - 用例执行完成：COMPAT_001, 兼容性
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：AUTH_REG_001, 认证-注册
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_REG_001
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:AUTH_REG_001
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(注册成功) == 实际结果(注册成功)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：AUTH_REG_001, 认证-注册
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：AUTH_REG_002, 认证-注册
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_REG_002
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': '', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': '', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：400
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:AUTH_REG_002
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(用户名和密码不能为空) == 实际结果(用户名和密码不能为空)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：AUTH_REG_002, 认证-注册
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：AUTH_REG_003, 认证-注册
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_REG_003
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '', 'confirm_password': ''}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '', 'confirm_password': ''}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：400
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:AUTH_REG_003
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(用户名和密码不能为空) == 实际结果(用户名和密码不能为空)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：AUTH_REG_003, 认证-注册
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：AUTH_REG_004, 认证-注册
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_REG_004
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'a', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'a', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：400
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:AUTH_REG_004
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(用户名至少2位) == 实际结果(用户名至少2位)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：AUTH_REG_004, 认证-注册
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：AUTH_REG_005, 认证-注册
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_REG_005
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'ab', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'ab', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:AUTH_REG_005
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(注册成功) == 实际结果(注册成功)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：AUTH_REG_005, 认证-注册
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：AUTH_REG_006, 认证-注册
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_REG_006
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '12345', 'confirm_password': '12345'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '12345', 'confirm_password': '12345'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：400
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:AUTH_REG_006
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(密码长度至少6位) == 实际结果(密码长度至少6位)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：AUTH_REG_006, 认证-注册
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：AUTH_REG_007, 认证-注册
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_REG_007
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser2', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser2', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:AUTH_REG_007
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(注册成功) == 实际结果(注册成功)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：AUTH_REG_007, 认证-注册
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：AUTH_REG_008, 认证-注册
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_REG_008
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'confirm_password': '654321'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'confirm_password': '654321'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：400
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:AUTH_REG_008
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(两次输入的密码不一致) == 实际结果(两次输入的密码不一致)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：AUTH_REG_008, 认证-注册
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：AUTH_REG_009, 认证-注册
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_REG_009
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：400
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:AUTH_REG_009
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(用户名已存在) == 实际结果(用户名已存在)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：AUTH_REG_009, 认证-注册
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：AUTH_REG_010, 认证-注册
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_REG_010
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': '  spaceuser  ', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': '  spaceuser  ', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:AUTH_REG_010
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(注册成功) == 实际结果(注册成功)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：AUTH_REG_010, 认证-注册
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：AUTH_LOGIN_001, 认证-登录
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_LOGIN_001
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'remember': False}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'remember': False}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:AUTH_LOGIN_001
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(登录成功) == 实际结果(登录成功)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：AUTH_LOGIN_001, 认证-登录
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：AUTH_LOGIN_002, 认证-登录
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_LOGIN_002
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'remember': True}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': '123456', 'remember': True}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:AUTH_LOGIN_002
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(登录成功) == 实际结果(登录成功)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：AUTH_LOGIN_002, 认证-登录
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：AUTH_LOGIN_003, 认证-登录
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_LOGIN_003
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': '', 'password': '123456'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': '', 'password': '123456'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：400
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:AUTH_LOGIN_003
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(用户名和密码不能为空) == 实际结果(用户名和密码不能为空)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：AUTH_LOGIN_003, 认证-登录
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：AUTH_LOGIN_004, 认证-登录
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_LOGIN_004
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': ''}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': ''}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：400
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:AUTH_LOGIN_004
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(用户名和密码不能为空) == 实际结果(用户名和密码不能为空)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：AUTH_LOGIN_004, 认证-登录
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：AUTH_LOGIN_005, 认证-登录
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_LOGIN_005
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'nouser', 'password': '123456'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'nouser', 'password': '123456'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：401
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:AUTH_LOGIN_005
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(用户名或密码错误) == 实际结果(用户名或密码错误)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：AUTH_LOGIN_005, 认证-登录
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：AUTH_LOGIN_006, 认证-登录
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_LOGIN_006
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': 'wrongpwd'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': 'wrongpwd'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：401
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:AUTH_LOGIN_006
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(用户名或密码错误) == 实际结果(用户名或密码错误)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：AUTH_LOGIN_006, 认证-登录
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：AUTH_CHECK_001, 认证-状态
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_CHECK_001
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/auth/check', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/auth/check', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:AUTH_CHECK_001
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(已登录) == 实际结果(已登录)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：AUTH_CHECK_001, 认证-状态
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：SESSION_001, 会话管理
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_001
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:SESSION_001
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(获取会话列表成功) == 实际结果(获取会话列表成功)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：SESSION_001, 会话管理
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：SESSION_003, 会话管理
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_003
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': {'messages': [{'role': 'user', 'content': '你好，请介绍一下Python'}]}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': {'messages': [{'role': 'user', 'content': '你好，请介绍一下Python'}]}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:SESSION_003
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(创建会话成功) == 实际结果(创建会话成功)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：SESSION_003, 会话管理
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：SESSION_004, 会话管理
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_004
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': {'messages': []}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': {'messages': []}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:SESSION_004
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(创建会话成功) == 实际结果(创建会话成功)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：SESSION_004, 会话管理
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：SESSION_005, 会话管理
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_005
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': {'messages': [{'role': 'user', 'content': '这是一条非常非常长的消息用来测试标题截断功能是否正常工作'}]}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': {'messages': [{'role': 'user', 'content': '这是一条非常非常长的消息用来测试标题截断功能是否正常工作'}]}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:SESSION_005
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(创建会话成功) == 实际结果(创建会话成功)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：SESSION_005, 会话管理
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：SESSION_007, 会话管理
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_007
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'PUT', 'url': 'http://127.0.0.1:5005/api/sessions/6af0c2b5', 'headers': '', 'params': '', 'data': '', 'json': {'messages': [{'role': 'user', 'content': '新消息'}]}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'PUT', 'url': 'http://127.0.0.1:5005/api/sessions/6af0c2b5', 'headers': '', 'params': '', 'data': '', 'json': {'messages': [{'role': 'user', 'content': '新消息'}]}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:SESSION_007
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(更新会话成功) == 实际结果(更新会话成功)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：SESSION_007, 会话管理
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：SESSION_008, 会话管理
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_008
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'PUT', 'url': 'http://127.0.0.1:5005/api/sessions/6af0c2b5', 'headers': '', 'params': '', 'data': '', 'json': {'title': '自定义标题'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'PUT', 'url': 'http://127.0.0.1:5005/api/sessions/6af0c2b5', 'headers': '', 'params': '', 'data': '', 'json': {'title': '自定义标题'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:SESSION_008
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(更新会话成功) == 实际结果(更新会话成功)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：SESSION_008, 会话管理
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：SESSION_009, 会话管理
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_009
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'PUT', 'url': 'http://127.0.0.1:5005/api/sessions/nonexistent', 'headers': '', 'params': '', 'data': '', 'json': {'messages': []}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'PUT', 'url': 'http://127.0.0.1:5005/api/sessions/nonexistent', 'headers': '', 'params': '', 'data': '', 'json': {'messages': []}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：404
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:SESSION_009
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(会话不存在) == 实际结果(会话不存在)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：SESSION_009, 会话管理
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：SESSION_011, 会话管理
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_011
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'DELETE', 'url': 'http://127.0.0.1:5005/api/sessions/6af0c2b5', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'DELETE', 'url': 'http://127.0.0.1:5005/api/sessions/6af0c2b5', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:SESSION_011
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(删除会话成功) == 实际结果(删除会话成功)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：SESSION_011, 会话管理
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：SESSION_012, 会话管理
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_012
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'DELETE', 'url': 'http://127.0.0.1:5005/api/sessions/nonexistent', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'DELETE', 'url': 'http://127.0.0.1:5005/api/sessions/nonexistent', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:25 - 请求成功：404
+2026-10-07 18:25:22 - INFO - asserts.py:21 - 开始断言:SESSION_012
+2026-10-07 18:25:22 - INFO - asserts.py:41 - 断言成功:预期结果(会话不存在) == 实际结果(会话不存在)
+2026-10-07 18:25:22 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:22 - INFO - test_runner.py:55 - 用例执行完成：SESSION_012, 会话管理
+2026-10-07 18:25:22 - INFO - test_runner.py:38 - 开始执行用例：CHAT_001, 聊天
+2026-10-07 18:25:22 - INFO - case_data.py:15 - 开始处理用例数据：CHAT_001
+2026-10-07 18:25:22 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '你好', 'session_id': 'abc12345'}, 'files': ''}
+2026-10-07 18:25:22 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '你好', 'session_id': 'abc12345'}, 'files': ''}
+2026-10-07 18:25:23 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:23 - INFO - asserts.py:21 - 开始断言:CHAT_001
+2026-10-07 18:25:23 - INFO - asserts.py:34 - 断言成功:预期结果(回复完成) 包含于 实际结果(回复完成)
+2026-10-07 18:25:23 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:23 - INFO - test_runner.py:55 - 用例执行完成：CHAT_001, 聊天
+2026-10-07 18:25:23 - INFO - test_runner.py:38 - 开始执行用例：CHAT_002, 聊天
+2026-10-07 18:25:23 - INFO - case_data.py:15 - 开始处理用例数据：CHAT_002
+2026-10-07 18:25:23 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '', 'session_id': 'abc12345'}, 'files': ''}
+2026-10-07 18:25:23 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '', 'session_id': 'abc12345'}, 'files': ''}
+2026-10-07 18:25:23 - INFO - send_requests.py:25 - 请求成功：400
+2026-10-07 18:25:23 - INFO - asserts.py:21 - 开始断言:CHAT_002
+2026-10-07 18:25:23 - INFO - asserts.py:41 - 断言成功:预期结果(问题不能为空) == 实际结果(问题不能为空)
+2026-10-07 18:25:23 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:23 - INFO - test_runner.py:55 - 用例执行完成：CHAT_002, 聊天
+2026-10-07 18:25:23 - INFO - test_runner.py:38 - 开始执行用例：CHAT_003, 聊天
+2026-10-07 18:25:23 - INFO - case_data.py:15 - 开始处理用例数据：CHAT_003
+2026-10-07 18:25:23 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '   ', 'session_id': 'abc12345'}, 'files': ''}
+2026-10-07 18:25:23 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '   ', 'session_id': 'abc12345'}, 'files': ''}
+2026-10-07 18:25:23 - INFO - send_requests.py:25 - 请求成功：400
+2026-10-07 18:25:23 - INFO - asserts.py:21 - 开始断言:CHAT_003
+2026-10-07 18:25:23 - INFO - asserts.py:41 - 断言成功:预期结果(问题不能为空) == 实际结果(问题不能为空)
+2026-10-07 18:25:23 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:23 - INFO - test_runner.py:55 - 用例执行完成：CHAT_003, 聊天
+2026-10-07 18:25:23 - INFO - test_runner.py:38 - 开始执行用例：CHAT_005, 聊天
+2026-10-07 18:25:23 - INFO - case_data.py:15 - 开始处理用例数据：CHAT_005
+2026-10-07 18:25:23 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '测试消息', 'session_id': 'abc12345'}, 'files': ''}
+2026-10-07 18:25:23 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '测试消息', 'session_id': 'abc12345'}, 'files': ''}
+2026-10-07 18:25:25 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:25 - INFO - asserts.py:21 - 开始断言:CHAT_005
+2026-10-07 18:25:25 - INFO - asserts.py:34 - 断言成功:预期结果(回复完成) 包含于 实际结果(回复完成)
+2026-10-07 18:25:25 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:25 - INFO - test_runner.py:55 - 用例执行完成：CHAT_005, 聊天
+2026-10-07 18:25:25 - INFO - test_runner.py:38 - 开始执行用例：CHAT_006, 聊天
+2026-10-07 18:25:25 - INFO - case_data.py:15 - 开始处理用例数据：CHAT_006
+2026-10-07 18:25:25 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '触发异常', 'session_id': 'abc12345'}, 'files': ''}
+2026-10-07 18:25:25 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '触发异常', 'session_id': 'abc12345'}, 'files': ''}
+2026-10-07 18:25:25 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:25 - INFO - asserts.py:21 - 开始断言:CHAT_006
+2026-10-07 18:25:25 - INFO - asserts.py:34 - 断言成功:预期结果(发生错误) 包含于 实际结果(发生错误: 测试异常)
+2026-10-07 18:25:25 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:25 - INFO - test_runner.py:55 - 用例执行完成：CHAT_006, 聊天
+2026-10-07 18:25:25 - INFO - test_runner.py:38 - 开始执行用例：COMPAT_002, 兼容性
+2026-10-07 18:25:25 - INFO - case_data.py:15 - 开始处理用例数据：COMPAT_002
+2026-10-07 18:25:25 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '你好', 'session_id': 'nonexistent'}, 'files': ''}
+2026-10-07 18:25:25 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '你好', 'session_id': 'nonexistent'}, 'files': ''}
+2026-10-07 18:25:27 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:27 - INFO - asserts.py:21 - 开始断言:COMPAT_002
+2026-10-07 18:25:27 - INFO - asserts.py:34 - 断言成功:预期结果(回复完成) 包含于 实际结果(回复完成)
+2026-10-07 18:25:27 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:27 - INFO - test_runner.py:55 - 用例执行完成：COMPAT_002, 兼容性
+2026-10-07 18:25:27 - INFO - test_runner.py:38 - 开始执行用例：COMPAT_003, 兼容性
+2026-10-07 18:25:27 - INFO - case_data.py:15 - 开始处理用例数据：COMPAT_003
+2026-10-07 18:25:27 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '你好'}, 'files': ''}
+2026-10-07 18:25:27 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '你好'}, 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:28 - INFO - asserts.py:21 - 开始断言:COMPAT_003
+2026-10-07 18:25:28 - INFO - asserts.py:34 - 断言成功:预期结果(回复完成) 包含于 实际结果(回复完成)
+2026-10-07 18:25:28 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:28 - INFO - test_runner.py:55 - 用例执行完成：COMPAT_003, 兼容性
+2026-10-07 18:25:28 - INFO - test_runner.py:38 - 开始执行用例：SEC_003, 安全
+2026-10-07 18:25:28 - INFO - case_data.py:15 - 开始处理用例数据：SEC_003
+2026-10-07 18:25:28 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:28 - INFO - asserts.py:21 - 开始断言:SEC_003
+2026-10-07 18:25:28 - INFO - asserts.py:41 - 断言成功:预期结果(获取会话列表成功) == 实际结果(获取会话列表成功)
+2026-10-07 18:25:28 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:28 - INFO - test_runner.py:55 - 用例执行完成：SEC_003, 安全
+2026-10-07 18:25:28 - INFO - test_runner.py:38 - 开始执行用例：AUTH_LOGOUT_001, 认证-登出
+2026-10-07 18:25:28 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_LOGOUT_001
+2026-10-07 18:25:28 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/logout', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/logout', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:28 - INFO - asserts.py:21 - 开始断言:AUTH_LOGOUT_001
+2026-10-07 18:25:28 - INFO - asserts.py:41 - 断言成功:预期结果(退出成功) == 实际结果(退出成功)
+2026-10-07 18:25:28 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:28 - INFO - test_runner.py:55 - 用例执行完成：AUTH_LOGOUT_001, 认证-登出
+2026-10-07 18:25:28 - INFO - test_runner.py:38 - 开始执行用例：AUTH_LOGOUT_002, 认证-登出
+2026-10-07 18:25:28 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_LOGOUT_002
+2026-10-07 18:25:28 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/logout', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/logout', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:28 - INFO - asserts.py:21 - 开始断言:AUTH_LOGOUT_002
+2026-10-07 18:25:28 - INFO - asserts.py:41 - 断言成功:预期结果(退出成功) == 实际结果(退出成功)
+2026-10-07 18:25:28 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:28 - INFO - test_runner.py:55 - 用例执行完成：AUTH_LOGOUT_002, 认证-登出
+2026-10-07 18:25:28 - INFO - test_runner.py:38 - 开始执行用例：AUTH_CHECK_002, 认证-状态
+2026-10-07 18:25:28 - INFO - case_data.py:15 - 开始处理用例数据：AUTH_CHECK_002
+2026-10-07 18:25:28 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/auth/check', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/auth/check', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:28 - INFO - asserts.py:21 - 开始断言:AUTH_CHECK_002
+2026-10-07 18:25:28 - INFO - asserts.py:41 - 断言成功:预期结果(未登录) == 实际结果(未登录)
+2026-10-07 18:25:28 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:28 - INFO - test_runner.py:55 - 用例执行完成：AUTH_CHECK_002, 认证-状态
+2026-10-07 18:25:28 - INFO - test_runner.py:38 - 开始执行用例：SESSION_002, 会话管理
+2026-10-07 18:25:28 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_002
+2026-10-07 18:25:28 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:25 - 请求成功：401
+2026-10-07 18:25:28 - INFO - asserts.py:21 - 开始断言:SESSION_002
+2026-10-07 18:25:28 - INFO - asserts.py:41 - 断言成功:预期结果(未登录) == 实际结果(未登录)
+2026-10-07 18:25:28 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:28 - INFO - test_runner.py:55 - 用例执行完成：SESSION_002, 会话管理
+2026-10-07 18:25:28 - INFO - test_runner.py:38 - 开始执行用例：SESSION_006, 会话管理
+2026-10-07 18:25:28 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_006
+2026-10-07 18:25:28 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': {'messages': []}, 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/sessions', 'headers': '', 'params': '', 'data': '', 'json': {'messages': []}, 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:25 - 请求成功：401
+2026-10-07 18:25:28 - INFO - asserts.py:21 - 开始断言:SESSION_006
+2026-10-07 18:25:28 - INFO - asserts.py:41 - 断言成功:预期结果(未登录) == 实际结果(未登录)
+2026-10-07 18:25:28 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:28 - INFO - test_runner.py:55 - 用例执行完成：SESSION_006, 会话管理
+2026-10-07 18:25:28 - INFO - test_runner.py:38 - 开始执行用例：SESSION_010, 会话管理
+2026-10-07 18:25:28 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_010
+2026-10-07 18:25:28 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'PUT', 'url': 'http://127.0.0.1:5005/api/sessions/6af0c2b5', 'headers': '', 'params': '', 'data': '', 'json': {'messages': []}, 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'PUT', 'url': 'http://127.0.0.1:5005/api/sessions/6af0c2b5', 'headers': '', 'params': '', 'data': '', 'json': {'messages': []}, 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:25 - 请求成功：401
+2026-10-07 18:25:28 - INFO - asserts.py:21 - 开始断言:SESSION_010
+2026-10-07 18:25:28 - INFO - asserts.py:41 - 断言成功:预期结果(未登录) == 实际结果(未登录)
+2026-10-07 18:25:28 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:28 - INFO - test_runner.py:55 - 用例执行完成：SESSION_010, 会话管理
+2026-10-07 18:25:28 - INFO - test_runner.py:38 - 开始执行用例：SESSION_013, 会话管理
+2026-10-07 18:25:28 - INFO - case_data.py:15 - 开始处理用例数据：SESSION_013
+2026-10-07 18:25:28 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'DELETE', 'url': 'http://127.0.0.1:5005/api/sessions/6af0c2b5', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'DELETE', 'url': 'http://127.0.0.1:5005/api/sessions/6af0c2b5', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:25 - 请求成功：401
+2026-10-07 18:25:28 - INFO - asserts.py:21 - 开始断言:SESSION_013
+2026-10-07 18:25:28 - INFO - asserts.py:41 - 断言成功:预期结果(未登录) == 实际结果(未登录)
+2026-10-07 18:25:28 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:28 - INFO - test_runner.py:55 - 用例执行完成：SESSION_013, 会话管理
+2026-10-07 18:25:28 - INFO - test_runner.py:38 - 开始执行用例：CHAT_004, 聊天
+2026-10-07 18:25:28 - INFO - case_data.py:15 - 开始处理用例数据：CHAT_004
+2026-10-07 18:25:28 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '你好', 'session_id': 'abc12345'}, 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '你好', 'session_id': 'abc12345'}, 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:25 - 请求成功：401
+2026-10-07 18:25:28 - INFO - asserts.py:21 - 开始断言:CHAT_004
+2026-10-07 18:25:28 - INFO - asserts.py:41 - 断言成功:预期结果(未登录) == 实际结果(未登录)
+2026-10-07 18:25:28 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:28 - INFO - test_runner.py:55 - 用例执行完成：CHAT_004, 聊天
+2026-10-07 18:25:28 - INFO - test_runner.py:38 - 开始执行用例：PAGE_003, 页面
+2026-10-07 18:25:28 - INFO - case_data.py:15 - 开始处理用例数据：PAGE_003
+2026-10-07 18:25:28 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/notexist', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'GET', 'url': 'http://127.0.0.1:5005/api/notexist', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:25 - 请求成功：404
+2026-10-07 18:25:28 - INFO - asserts.py:21 - 开始断言:PAGE_003
+2026-10-07 18:25:28 - INFO - asserts.py:41 - 断言成功:预期结果(接口不存在) == 实际结果(接口不存在)
+2026-10-07 18:25:28 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:28 - INFO - test_runner.py:55 - 用例执行完成：PAGE_003, 页面
+2026-10-07 18:25:28 - INFO - test_runner.py:38 - 开始执行用例：SEC_001, 安全
+2026-10-07 18:25:28 - INFO - case_data.py:15 - 开始处理用例数据：SEC_001
+2026-10-07 18:25:28 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': "admin' OR '1'='1", 'password': '123456'}, 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': "admin' OR '1'='1", 'password': '123456'}, 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:25 - 请求成功：401
+2026-10-07 18:25:28 - INFO - asserts.py:21 - 开始断言:SEC_001
+2026-10-07 18:25:28 - INFO - asserts.py:41 - 断言成功:预期结果(用户名或密码错误) == 实际结果(用户名或密码错误)
+2026-10-07 18:25:28 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:28 - INFO - test_runner.py:55 - 用例执行完成：SEC_001, 安全
+2026-10-07 18:25:28 - INFO - test_runner.py:38 - 开始执行用例：SEC_002, 安全
+2026-10-07 18:25:28 - INFO - case_data.py:15 - 开始处理用例数据：SEC_002
+2026-10-07 18:25:28 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': '<script>alert(1)</script>', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': '<script>alert(1)</script>', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:28 - INFO - asserts.py:21 - 开始断言:SEC_002
+2026-10-07 18:25:28 - INFO - asserts.py:41 - 断言成功:预期结果(注册成功) == 实际结果(注册成功)
+2026-10-07 18:25:28 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:28 - INFO - test_runner.py:55 - 用例执行完成：SEC_002, 安全
+2026-10-07 18:25:28 - INFO - test_runner.py:38 - 开始执行用例：SEC_004, 安全
+2026-10-07 18:25:28 - INFO - case_data.py:15 - 开始处理用例数据：SEC_004
+2026-10-07 18:25:28 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/register', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'password': '123456', 'confirm_password': '123456'}, 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:25 - 请求成功：200
+2026-10-07 18:25:28 - INFO - asserts.py:21 - 开始断言:SEC_004
+2026-10-07 18:25:28 - INFO - asserts.py:41 - 断言成功:预期结果(注册成功) == 实际结果(注册成功)
+2026-10-07 18:25:28 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:28 - INFO - test_runner.py:55 - 用例执行完成：SEC_004, 安全
+2026-10-07 18:25:28 - INFO - test_runner.py:38 - 开始执行用例：COMPAT_001, 兼容性
+2026-10-07 18:25:28 - INFO - case_data.py:15 - 开始处理用例数据：COMPAT_001
+2026-10-07 18:25:28 - INFO - case_data.py:26 - 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:18 - 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': '', 'files': ''}
+2026-10-07 18:25:28 - INFO - send_requests.py:25 - 请求成功：400
+2026-10-07 18:25:28 - INFO - asserts.py:21 - 开始断言:COMPAT_001
+2026-10-07 18:25:28 - INFO - asserts.py:41 - 断言成功:预期结果(用户名和密码不能为空) == 实际结果(用户名和密码不能为空)
+2026-10-07 18:25:28 - INFO - data_extraction.py:10 - 开始数据提取
+2026-10-07 18:25:28 - INFO - test_runner.py:55 - 用例执行完成：COMPAT_001, 兼容性

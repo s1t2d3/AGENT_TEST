@@ -1,9 +1,0 @@
-INFO     testcases.test_runner:test_runner.py:38 开始执行用例：SESSION_007, 会话管理
-INFO     utils.case_data:case_data.py:15 开始处理用例数据：SESSION_007
-INFO     utils.case_data:case_data.py:26 用例数据处理完成:{'method': 'PUT', 'url': 'http://127.0.0.1:5005/api/sessions/7df7c413', 'headers': '', 'params': '', 'data': '', 'json': {'messages': [{'role': 'user', 'content': '新消息'}]}, 'files': ''}
-INFO     utils.send_requests:send_requests.py:18 开始发送请求：{'method': 'PUT', 'url': 'http://127.0.0.1:5005/api/sessions/7df7c413', 'headers': '', 'params': '', 'data': '', 'json': {'messages': [{'role': 'user', 'content': '新消息'}]}, 'files': ''}
-INFO     utils.send_requests:send_requests.py:25 请求成功：200
-INFO     utils.asserts:asserts.py:21 开始断言:SESSION_007
-INFO     utils.asserts:asserts.py:41 断言成功:预期结果(更新会话成功) == 实际结果(更新会话成功)
-INFO     utils.data_extraction:data_extraction.py:10 开始数据提取
-INFO     testcases.test_runner:test_runner.py:55 用例执行完成：SESSION_007, 会话管理
