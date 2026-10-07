@@ -36,6 +36,8 @@ jobs:
           echo '/opt/allure/bin' >> $GITHUB_PATH
 
       - name: Run tests
+        env:
+          DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
         run: python run.py
 
       # 把报告推到 gh-pages 分支
