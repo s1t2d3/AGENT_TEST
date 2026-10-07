@@ -1,0 +1,5 @@
+INFO     testcases.test_runner:test_runner.py:38 开始执行用例：AUTH_LOGIN_004, 认证-登录
+INFO     utils.case_data:case_data.py:15 开始处理用例数据：AUTH_LOGIN_004
+INFO     utils.case_data:case_data.py:26 用例数据处理完成:{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': ''}, 'files': ''}
+INFO     utils.send_requests:send_requests.py:18 开始发送请求：{'method': 'POST', 'url': 'http://127.0.0.1:5005/api/auth/login', 'headers': '', 'params': '', 'data': '', 'json': {'username': 'testuser', 'password': ''}, 'files': ''}
+ERROR    utils.send_requests:send_requests.py:28 请求异常：HTTPConnectionPool(host='127.0.0.1', port=5005): Max retries exceeded with url: /api/auth/login (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=5005): Failed to establish a new connection: [Errno 111] Connection refused"))

@@ -1,0 +1,5 @@
+INFO     testcases.test_runner:test_runner.py:38 开始执行用例：SESSION_010, 会话管理
+INFO     utils.case_data:case_data.py:15 开始处理用例数据：SESSION_010
+INFO     utils.case_data:case_data.py:26 用例数据处理完成:{'method': 'PUT', 'url': 'http://127.0.0.1:5005/api/sessions/${session_id}', 'headers': '', 'params': '', 'data': '', 'json': {'messages': []}, 'files': ''}
+INFO     utils.send_requests:send_requests.py:18 开始发送请求：{'method': 'PUT', 'url': 'http://127.0.0.1:5005/api/sessions/${session_id}', 'headers': '', 'params': '', 'data': '', 'json': {'messages': []}, 'files': ''}
+ERROR    utils.send_requests:send_requests.py:28 请求异常：HTTPConnectionPool(host='127.0.0.1', port=5005): Max retries exceeded with url: /api/sessions/$%7Bsession_id%7D (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=5005): Failed to establish a new connection: [Errno 111] Connection refused"))
