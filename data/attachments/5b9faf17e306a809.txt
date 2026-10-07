@@ -1,9 +1,0 @@
-INFO     testcases.test_runner:test_runner.py:38 开始执行用例：CHAT_006, 聊天
-INFO     utils.case_data:case_data.py:15 开始处理用例数据：CHAT_006
-INFO     utils.case_data:case_data.py:26 用例数据处理完成:{'method': 'POST', 'url': 'https://129rw12mk7738.vicp.fun/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '触发异常', 'session_id': 'abc12345'}, 'files': ''}
-INFO     utils.send_requests:send_requests.py:18 开始发送请求：{'method': 'POST', 'url': 'https://129rw12mk7738.vicp.fun/api/chat/stream', 'headers': '', 'params': '', 'data': '', 'json': {'prompt': '触发异常', 'session_id': 'abc12345'}, 'files': ''}
-INFO     utils.send_requests:send_requests.py:25 请求成功：200
-INFO     utils.asserts:asserts.py:21 开始断言:CHAT_006
-INFO     utils.asserts:asserts.py:34 断言成功:预期结果(发生错误) 包含于 实际结果(发生错误: 测试异常)
-INFO     utils.data_extraction:data_extraction.py:10 开始数据提取
-INFO     testcases.test_runner:test_runner.py:55 用例执行完成：CHAT_006, 聊天
