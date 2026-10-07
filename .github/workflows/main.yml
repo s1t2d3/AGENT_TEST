@@ -48,19 +48,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: report/html_report
           publish_branch: gh-pages
-      #
-      - name: Push report to Gitee
-        if: always()
-        run: |
-          cd report/html_report
-          git init
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add .
-          git commit -m "update report"
-          git branch -M master
-          git remote add gitee https://${{ secrets.GITEE_USER }}:${{ secrets.GITEE_TOKEN }}@gitee.com/${{ secrets.GITEE_USER }}/${{ secrets.GITEE_REPO }}.git
-          git config http.postBuffer 524288000
-          git config http.lowSpeedLimit 0
-          git config http.lowSpeedTime 999999
-          git push -f gitee master
