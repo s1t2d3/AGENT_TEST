@@ -10,33 +10,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    # 关键：给 workflow 写 gh-pages 的权限
     permissions:
       contents: write
-      
-    step:
-      - name: Pull and run std
-        run: |
-          docker pull ghcr.io/s1t2d3/std:86eaae2259955296e4bcf2b279a8f6135d3f13ff
 
-          docker run -d -p 5005:5005 \
-          --name std-server \
-          ghcr.io/s1t2d3/std:86eaae2259955296e4bcf2b279a8f6135d3f13ff
-
-          echo "等待 5005 端口就绪..."
-          for i in $(seq 1 30); do
-            if curl -s -o /dev/null http://localhost:5005/api/sessions; then
-            echo "服务已就绪（第 ${i} 次尝试）"
-            exit 0
-          fi
-          echo "第 ${i} 次尝试失败，2 秒后重试..."
-          sleep 2
-          done
-
-          echo "服务在 60 秒内未就绪，退出"
-          docker logs std-server   # 方便排查
-          exit 1
-         
+    steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
@@ -57,12 +34,36 @@ jobs:
           sudo mv allure-2.27.0 /opt/allure
           echo '/opt/allure/bin' >> $GITHUB_PATH
 
+      - name: Pull and run std
+        run: |
+          docker pull ghcr.io/s1t2d3/std:86eaae2259955296e4bcf2b279a8f6135d3f13ff
+
+          docker run -d -p 5005:5005 \
+            --name std-server \
+            ghcr.io/s1t2d3/std:86eaae2259955296e4bcf2b279a8f6135d3f13ff
+
+          echo "等待 5005 端口就绪..."
+          for i in $(seq 1 30); do
+            if curl -s -o /dev/null --max-time 2 http://localhost:5005/api/sessions; then
+              echo "服务已就绪（第 ${i} 次尝试）"
+              break
+            fi
+            echo "第 ${i} 次尝试失败，2 秒后重试..."
+            sleep 2
+          done
+
+          # 最终校验
+          if ! curl -s -o /dev/null --max-time 2 http://localhost:5005/api/sessions; then
+            echo "服务在 60 秒内未就绪，退出"
+            docker logs std-server
+            exit 1
+          fi
+
       - name: Run tests
         env:
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
         run: python run.py
 
-      # 把报告推到 gh-pages 分支
       - name: Deploy report to gh-pages
         if: always()
         uses: peaceiris/actions-gh-pages@v3
@@ -70,3 +71,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: report/html_report
           publish_branch: gh-pages
+          keep_files: true
