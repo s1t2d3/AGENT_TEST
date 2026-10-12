@@ -35,6 +35,8 @@ jobs:
           echo '/opt/allure/bin' >> $GITHUB_PATH
 
       - name: Pull and run std
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           docker pull ghcr.io/s1t2d3/std:86eaae2259955296e4bcf2b279a8f6135d3f13ff
 
