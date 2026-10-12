@@ -42,6 +42,7 @@ jobs:
 
           docker run -d -p 5005:5005 \
             --name std-server \
+            -e OPENAI_API_KEY="$OPENAI_API_KEY" \
             ghcr.io/s1t2d3/std:86eaae2259955296e4bcf2b279a8f6135d3f13ff
 
           echo "等待 5005 端口就绪..."
