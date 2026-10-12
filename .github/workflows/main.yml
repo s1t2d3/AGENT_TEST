@@ -13,25 +13,29 @@ jobs:
     # 关键：给 workflow 写 gh-pages 的权限
     permissions:
       contents: write
-
-    steps:
-      - name: Pull an run std
+      
+    step:
+      - name: Pull and run std
         run: |
-         docker pull ghcr.io/s1t2d3/std:86eaae2259955296e4bcf2b279a8f6135d3f13ff
-         docker run -d -p 5005:5005 --name ghcr.io/s1t2d3/std:86eaae2259955296e4bcf2b279a8f6135d3f13ff
-         
-         echo "等待 5005 端口就绪..."
-         for i in $(seq 1 30); do
+          docker pull ghcr.io/s1t2d3/std:86eaae2259955296e4bcf2b279a8f6135d3f13ff
+
+          docker run -d -p 5005:5005 \
+          --name std-server \
+          ghcr.io/s1t2d3/std:86eaae2259955296e4bcf2b279a8f6135d3f13ff
+
+          echo "等待 5005 端口就绪..."
+          for i in $(seq 1 30); do
             if curl -s -o /dev/null http://localhost:5005/api/sessions; then
             echo "服务已就绪（第 ${i} 次尝试）"
             exit 0
-            fi
-            echo "第 ${i} 次尝试失败，2 秒后重试..."
-            sleep 2
-         done
+          fi
+          echo "第 ${i} 次尝试失败，2 秒后重试..."
+          sleep 2
+          done
 
-         echo "::error::等待 5005 端口超时" 
-         exit 1
+          echo "服务在 60 秒内未就绪，退出"
+          docker logs std-server   # 方便排查
+          exit 1
          
       - name: Checkout code
         uses: actions/checkout@v4
