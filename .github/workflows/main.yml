@@ -15,6 +15,12 @@ jobs:
       contents: write
 
     steps:
+      - name: Pull an run std
+       run: |
+         docker pull ghcr.io/s1t2d3/std:86eaae2259955296e4bcf2b279a8f6135d3f13ff
+         docker run -d -p 5005:5005 ghcr.io/s1t2d3/std:86eaae2259955296e4bcf2b279a8f6135d3f13ff
+         step 10
+         
       - name: Checkout code
         uses: actions/checkout@v4
 
